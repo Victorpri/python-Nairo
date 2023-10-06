@@ -13,7 +13,13 @@ def otrapagina():
 
 @app.route('/terceraPag')
 def terceraPag():
-    return 'hola soy la tercera pagina'
+    #return 'hola soy la tercera pagina'
+    return render_template('/tercerPag.html')
+
+@app.route('/layout')
+def layout():
+    #return 'hola soy la tercera pagina'
+    return render_template('/layout.html')
 
 
 if __name__ == "__main__":
